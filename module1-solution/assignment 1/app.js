@@ -18,20 +18,20 @@
 
         if($scope.lunchMenu == "")
 {
-          $scope.messageDiv = "Please enter data Lunch Menu!";
+          $scope.message = "Please enter Lunch Menu First!";
           $scope.check = "1px";
               $scope.borderColor= "Red";
 }
 
         else if(items.length <= 3)
 {
-          $scope.messageDiv = "Enjoy!";
+          $scope.message = "Enjoy!";
           $scope.check = "1px";
               $scope.borderColor= "Green";
 }
         else
 {
-          $scope.messageDiv = "Too much!";
+          $scope.message = "Too much!";
           $scope.check = "2px";
               $scope.borderColor= "Green";
 }      };
