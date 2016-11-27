@@ -1,6 +1,22 @@
-<ul ng-repeat="item in list.items">
-<li>
-    {{ item.name }}
-  <button ng-click="list.onRemove({index: $index});">Remove Item</button>
-</li>
-</ul>
+
+<table class="table table-hover">
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Short Name</th>
+<th>Description</th>
+<th>Remove</th>
+</tr>
+</thead>
+<tbody>
+<tr ng-repeat="item in list.items">
+
+<td>{{item.id}}</td>
+<td>{{ item.name }}</td>
+<td>{{item.short_name}}</td>
+<td>{{item.description}}</td>
+<td><button ng-click="list.onRemove({index: $index});">Donot want this one</button></td>
+</tr>    
+</tbody>  
+</table>
