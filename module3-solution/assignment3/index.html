@@ -25,14 +25,18 @@
       <button class="btn btn-primary" ng-click="list.foundMenuItem()">Narrow It Down For Me!</button>
     </div>
     <p>
-<div style="float:left">
 
+<div style="display:block">
+<div ng-show="list.showmenu">
+  <h3> Total Match item(s) {{list.foundMenuItems.length}}</h3>
     <found-items
-    items="list.foundMenuItems"
+    items="list.foundMenuItems" title=" {{list.foundMenuItems.length}}"
     on-remove="list.removeItem(index)"></found-items>
 
 </div>
-  </div>
+</div>
+</div>
+</div>
     <!-- found-items should be implemented as a component -->
 
 
