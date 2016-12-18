@@ -10,9 +10,11 @@
         var ctrl = this;
         ctrl.basePath = ApiPath;
         ctrl.currentUser = UserService.getUser();
-        if (ctrl.currentUser && ctrl.currentUser.favourite) {
+        if (ctrl.currentUser && ctrl.currentUser.favourite) 
+        {
             MenuService.getMenuItem(ctrl.currentUser.favourite)
-                .then(function(response) {
+                .then(function(response) 
+                {
                     ctrl.menuItem = response;
                 })
         }
